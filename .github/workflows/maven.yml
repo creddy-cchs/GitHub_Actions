@@ -1,5 +1,4 @@
 name: Java CI with Maven
-
 on:
 #    schedule:
 #      - cron:  "5 * * * *"
@@ -9,7 +8,7 @@ on:
  # pull_request:
  #   branches: [ main ]
 
-# Secrets
+# Secrets as env
 env: 
   art_pass: ${{ secrets.ARTIFACTORY_PASSWORD }}
 
