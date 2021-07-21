@@ -8,6 +8,8 @@ on:
     branches: [ main ]
  # pull_request:
  #   branches: [ main ]
+
+# Secrets
 env: 
   art_pass: ${{ secrets.ARTIFACTORY_PASSWORD }}
 
