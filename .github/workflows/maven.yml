@@ -9,6 +9,9 @@ on:
  # pull_request:
  #   branches: [ main ]
 
+env: 
+  art_pass: ${{ secrets.ARTIFACTORY_PASSWORD }}
+
 jobs:
   build:
 
@@ -21,6 +24,8 @@ jobs:
       with:
         java-version: '11'
         distribution: 'adopt'
+    - name: Calling password
+      run : echo $art_pass
     - name: Build with Maven
       run: mvn -B package --file pom.xml
       
